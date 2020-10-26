@@ -1,0 +1,15 @@
+name: ckdt
+base: core20
+version: 'git'
+summary: Tools for generating Charmed Kubernetes documentation
+description: |
+  This snap packages up some scripts used for autogenerating parts of the 
+  Charmed Kubernetes documentation (https://ubuntu.com/kubernetes/docs).
+  Probably of no use/interest to anyone outside of Canonical docs. 
+
+grade: devel 
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+parts:
+  my-part:
+    plugin: python
